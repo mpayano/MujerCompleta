@@ -1,0 +1,883 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 43px;
+    background-color: #2D9CDB;
+    color: black;
+    margin-top: -12px;
+    height: 56px;
+}
+
+footer {
+    background-image: url(http://bestanimations.com/Text/upliftingquotes/you-are-strong-inspiring-worth-it-perfect-positive-inspiration-quote-gif.gif);
+    background-size: contain;
+    margin-top: 149px;
+    height: 100px;
+    width: 102%;
+
+
+}
+
+nav a li{
+  display: inline;
+  color: white;
+  font-size: 24px;
+  margin-left: 35px;
+  font-family: 'Homenaje', sans-serif;
+  text-decoration: none;
+  float: left;
+  padding: 10px;
+
+}
+
+
+#one h1{
+       font-weight: 800;
+       font-size: 90px;
+       margin-top: -60px;
+       text-align: center;
+       color: #2D9CDB;
+       font-family: 'Niconne', cursive;
+}
+
+
+#one h2{
+    margin-top: 74px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    font-family: 'Martel', serif;
+    font-weight: 800;
+  }
+
+h3 {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  margin-top: -73px;
+  font-family: 'Martel', serif;
+  font-weight: 800;
+}
+
+
+#one p{
+  color:  black;
+  font-size: 40px;
+  margin-top: 53px;
+  margin-top: -89px;
+  text-align: center;
+font-family: 'Homenaje', sans-serif;
+}
+
+#one{
+  margin-top: -46px;
+  background-color: white;
+  background-image: url();
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#one .line-break{
+  width: 34%;
+  height: 127px;
+  margin-left: 474px;
+  margin-top: -52px;
+}
+
+#one img{
+  width: 102%;
+  height: 700px;
+    /* margin-left: 51%; */
+    margin-top: -73px;
+
+  }
+
+
+#about1{
+    height: 83%;
+    width: 87%;
+    background-color: #2D9CDB;
+    margin-left: 6%;
+    margin-top: 6%;
+    padding: 20px 5px 5px 5px;
+    color: white;
+}
+
+
+#about{
+  font-size: 28px;
+  font-family: 'Martel', serif;
+
+
+}
+
+#about h2{
+  color: white;
+  margin-left: 28px;
+  font-weight: bolder;
+  font-family: 'Martel', serif;
+  font-size: 32px;
+
+}
+
+.mp{
+  width: 59%;
+  margin-left: 28px;
+}
+
+
+.about2{
+  width: 40%;
+  margin-left: 28px;
+}
+
+.about3{
+  width: 33%;
+  margin-left: 64%;
+  margin-top: -31%;
+}
+
+.about4{
+  width: 33%;
+  margin-left: 32%;
+  margin-top: -31%
+
+}
+
+#guest{
+  margin-top:
+}
+
+#guest h2{
+  color: black;
+  margin-left: 28px;
+  font-weight: bolder;
+  font-family: 'Martel', serif;
+  font-size: 32px;
+}
+
+#guest2{
+    float: left;
+    display: flex;
+    margin-top: 8px;
+    margin-left: 274px;
+}
+
+#guest3{
+  float: left;
+  display: flex;
+  margin-left: 19%;
+}
+
+
+.orquis{
+
+    background-image: url(../images/prota.JPG);
+    height: 307px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    margin-top: -17px;
+    box-shadow: 5px 5px 5px black;
+
+}
+
+.orquis_Social{
+  background: #2D9CDB;
+  opacity: 0.7;
+  width: 54px;
+  height: 253px;
+}
+
+.fa-instagram{
+  color: white;
+}
+.fa-facebook-official{
+
+}
+.orquis_Text{
+  position: relative;
+  top: 250px;
+  padding-left: 25px;
+  background: #2D9CDB;
+  opacity: 0.7;
+  height: 57px;
+  width: 305px;
+  padding-top: 12px;
+  color: white;
+  margin-left: 1px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.orquis_Paragraph{
+  position: relative;
+  top: 252px;
+  opacity: 0.8;
+  height: 130px;
+  width: 306px;
+  padding-top: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 1.5em;
+  display: none;
+  background: #2D9CDB;
+  color: white;
+  margin-top: 3px;
+}
+
+.ramon{
+    background-image: url(https://scontent.fbed1-1.fna.fbcdn.net/v/t1.0-9/18582207_1668527079841366_204833209913420341_n.jpg?oh=aa3d439043bf1de547a775adbafa389e&oe=5A531070);
+    height: 307px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    margin-left: 23px;
+    box-shadow: 5px 5px 5px black;
+
+
+}
+
+.ramon_Text{
+  position: relative;
+  top: 234px;
+  padding-left: 25px;
+  background: #2D9CDB;
+  opacity: 0.7;
+  height: 57px;
+  width: 308px;
+  padding-top: 12px;
+  color: white;
+  box-shadow: 5px 5px 5px black;
+}
+
+.ramon_Paragraph{
+  position: relative;
+  top: 252px;
+  opacity: 0.8;
+  height: 132px;
+  width: 308px;
+  padding-top: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 1.5em;
+  display: none;
+  background: #2D9CDB;
+  color: white;
+  margin-top: 3px;
+}
+.stirvax{
+  background-image: url("../images/stirvax.png");
+  height: 307px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  width: 308px;
+  margin-left: 17.8px;
+  box-shadow: 5px 5px 5px black;
+
+
+
+}
+.stirvax_Text{
+  position: relative;
+  top: 234px;
+  padding-left: 25px;
+  background: #2D9CDB;
+  opacity: 0.7;
+  height: 57px;
+  width: 308px;
+  padding-top: 12px;
+  color: white;
+  box-shadow: 5px 5px 5px black;
+}
+.stirvax_Paragraph{
+  position: relative;
+  top: 252px;
+  opacity: 0.8;
+  height: 129px;
+  width: 308px;
+  padding-top: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 1.5em;
+  display: none;
+  background: #2D9CDB;
+  color: white;
+  margin-top: 3px;
+}
+
+.rose{
+
+  background-image: url(../images/rose.png);
+  height: 307px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  width: 308px;
+  box-shadow: 5px 5px 5px black;
+  margin-top: 30px;
+}
+
+.rose_Text{
+   position: relative;
+    top: 234px;
+    padding-left: 25px;
+    background: #2D9CDB;
+    opacity: 0.7;
+    height: 57px;
+    width: 308px;
+    padding-top: 12px;
+    color: white;
+    margin-left: 0px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.rose_Paragraph{
+  position: relative;
+  top: 252px;
+  opacity: 0.8;
+  height: 130px;
+  width: 308px;
+  padding-top: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 1.5em;
+  display: none;
+  background: #2D9CDB;
+  color: white;
+  margin-top: 3px;
+}
+
+.ariel{
+    background-image: url(../images/Ariel.png);
+    height: 307px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    width: 308px;
+    margin-left: 25px;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 30px;
+
+}
+
+.ariel_Text{
+   position: relative;
+   top: 233px;
+   padding-left: 25px;
+   background: #2D9CDB;
+   opacity: 0.7;
+   height: 57px;
+   width: 308px;
+   padding-top: 12px;
+   color: white;
+   margin-left: 0px;
+   box-shadow: 5px 5px 5px black;
+}
+
+.ariel_Paragraph{
+  position: relative;
+  top: 252px;
+  opacity: 0.8;
+  height: 130px;
+  width: 308px;
+  padding-top: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 1.5em;
+  display: none;
+  background: #2D9CDB;
+  color: white;
+  margin-top: 3px;
+}
+
+.suji{
+
+    background-image: url(../images/suljy.jpg);
+    height: 307px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    width: 308px;
+    margin-left: 19px;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 30px;
+
+}
+
+.suji_Text{
+   position: relative;
+   top: 233px;
+   padding-left: 25px;
+   background: #2D9CDB;
+   opacity: 0.7;
+   height: 57px;
+   width: 308px;
+   padding-top: 12px;
+   color: white;
+   margin-left: 0px;
+   box-shadow: 5px 5px 5px black;
+}
+
+.suji_Paragraph{
+  position: relative;
+  top: 252px;
+  opacity: 0.8;
+  height: 130px;
+  width: 308px;
+  padding-top: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 1.5em;
+  display: none;
+  background: #2D9CDB;
+  color: white;
+  margin-top: 3px;
+}
+
+#program {
+    margin-top: 54%;
+}
+
+#program h2{
+  color: black;
+  margin-left: 28px;
+  font-weight: bolder;
+  font-family: 'Martel', serif;
+  font-size: 54px;
+  margin-left: 40%;
+  margin-top: 42px;
+  margin-top: 129px;
+}
+
+
+.orqui{
+    background-image: url(../images/maria.png);
+    background-size: auto;
+    height: 275%;
+    background-repeat: no-repeat;
+    margin-left: -203px;
+    margin-top: -67%;
+}
+
+.program2{
+ font-size: 38px;
+ margin-left: 40%;
+ font-family: 'Martel', serif;
+
+}
+
+#carousel1{
+  background-color: #2D9CDB;
+  width: 87%;
+  margin-left: 6%;
+  height: 90%;
+  color: white;
+}
+
+#carousel {
+
+}
+
+.page1{
+    background-image: url(http://bestanimations.com/Text/upliftingquotes/you-are-strong-inspiring-worth-it-perfect-positive-inspiration-quote-gif.gif);
+    background-size: contain;
+    margin-top: 38px;
+    height: 100px;
+    width: 102%;
+
+}
+
+.sponsor{
+    font-family: 'Martel', serif;
+    font-size: 32px;
+    margin-top: -64%;
+    margin-left: 28px;
+    padding: 50px 5px 5px 5px;
+}
+
+.slick-slide img {
+    display: block;
+    width: 100%;
+  }
+
+
+
+
+
+
+  @media only screen and (max-width: 750px){
+
+
+#about1 {
+    height: auto;
+    width: 87%;
+    background-color: #2D9CDB;
+    margin-left: 6%;
+    margin-top: 6%;
+    padding: 20px 5px 5px 5px;
+    color: white;
+}
+
+#about h2 {
+      color: white;
+      margin-left: 11px;
+      font-weight: bolder;
+      font-family: 'Martel', serif;
+      font-size: 1.2em;
+  }
+
+
+.about2 {
+      width: 91%;
+      margin-left: 42px;
+}
+
+.about4 {
+    font-size: 18px;
+    width: 89%;
+    margin-left: 7%;
+    margin-top: 9%;
+}
+
+.about3 {
+    width: 89%;
+    margin-left: 8%;
+    margin-top: 20%;
+    font-size: 18px;
+}
+
+
+
+  .mp {
+      font-size: 18px;
+      width: 100%;
+      margin-left: -17px;
+  }
+
+
+  #guest{
+    margin-top:
+  }
+
+  #guest h2{
+    color: black;
+    margin-left: 46px;
+    font-weight: bolder;
+    font-family: 'Martel', serif;
+    font-size: 32px;
+  }
+
+  #guest2{
+      margin-left: 0;
+      float: none;
+      display: block;
+      border: none;
+  }
+
+  #guest3{
+    float: none;
+    margin-left: 19%;
+    display: block;
+    border: none;
+  }
+
+
+  .orquis{
+
+      background-image: url(../images/prota.JPG);
+      height: 307px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: 0.5s;
+      margin-top: -17px;
+      box-shadow: none;
+      margin-left: 45px;
+  }
+
+.ramon {
+    box-shadow: none;
+    margin-left: 43px;
+}
+
+
+.stirvax {
+    box-shadow: none;
+    margin-left: 46px;
+}
+
+.ariel {
+  box-shadow: none;
+  margin-left: -29px;
+  margin-top: 17px;
+}
+.rose {
+  box-shadow: none;
+  margin-left: -29px;
+  margin-top: 17px;
+}
+
+.suji {
+  box-shadow: none;
+  margin-left: -27px;
+  margin-top: 17px;
+}
+
+.ariel_Text {
+    position: relative;
+    top: 250px;
+  }
+
+  .rose_Text {
+    position: relative;
+    top: 250px;
+  }
+
+  .stirvax_Text {
+      position: relative;
+      top: 250px;
+    }
+
+    .ramon_Text {
+    position: relative;
+    top: 250px;
+  }
+
+  .suji_Text {
+      position: relative;
+      top: 250px;
+}
+
+
+#program h2 {
+    color: #9CD6F8;
+    margin-left: 28px;
+    font-weight: bolder;
+    font-family: 'Martel', serif;
+    font-size: 38px;
+    margin-left: 20%;
+    margin-top: 120%;
+}
+.orqui {
+    background-image: url(../images/maria.png);
+    background-size: auto;
+    height: 275%;
+    background-repeat: no-repeat;
+    margin-left: -118px;
+    margin-top: -177%;
+}
+
+.program2 {
+    font-size: 13px;
+    margin-left: 13%;
+    font-family: 'Martel', serif;
+    color: #9CD6F8;
+}
+
+nav a li {
+    display: inline;
+    color: white;
+    font-size: 12px;
+    margin-left: 1px;
+    font-family: 'Homenaje', sans-serif;
+    text-decoration: none;
+    float: left;
+    padding: 18px 5px 5px 5px;
+}
+
+#carousel1{
+  margin-top: -195%;
+  height: 55%;
+  margin-top: -161%;
+}
+
+
+  #one p {
+      color: black;
+      font-size: 18px;
+      margin-top: 53px;
+      margin-top: -69px;
+      text-align: center;
+}
+}
+
+/*@media (max-width: 736px) and (min-width: 375px){
+
+.about2 {
+    width: 111%;
+    margin-left: 28px;
+  }
+
+#about1 {
+  height: 45%;
+}
+
+.about4 {
+  width: 81%;
+  margin-left: 6%;
+  margin-top: 4%;
+}
+
+.about3 {
+  width: 81%;
+  margin-left: 6%;
+  margin-top: 0%;
+}
+
+
+
+#guest2 {
+  height: 149%;
+  width: 87%;
+  margin-left: 6%;
+  margin-top: 6%;
+  padding: 20px 5px 5px 5px;
+}
+
+.ramon {
+  height: 307px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  margin-left: 59.3%;
+  margin-top: -322px;
+}
+
+
+.stirvax {
+  background-image: url(../images/stirvax.png);
+  height: 307px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  width: 308px;
+  margin-top: 82px;
+  margin-left: 8.3%;
+}
+
+.rose {
+  background-image: url(../images/rose.png);
+  height: 307px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  width: 308px;
+  margin-left: 60.3%;
+  margin-top: -37.7%;
+}
+
+
+.ariel {
+  background-image: url(../images/Ariel.png);
+  height: 307px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  width: 308px;
+  margin-top: -173.6%;
+  margin-left: 58.3%;
+}
+
+.suji {
+  background-image: url(../images/suljy.jpg);
+  height: 307px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  width: 308px;
+  margin-top: -33.7%;
+  margin-left: 14.3%;
+}
+
+.program2 {
+  font-size: 34px;
+  margin-left: 40%;
+  font-family: 'Martel', serif;
+}
+
+.orqui {
+  background-image: url(../images/maria.png);
+  background-size: auto;
+  height: 275%;
+  background-repeat: no-repeat;
+  margin-left: -203px;
+  margin-top: -98%;
+}
+
+#carousel1 {
+  background-color: #2D9CDB;
+  width: 87%;
+  margin-left: 6%;
+  height: 32%;
+  color: white;
+}
+
+.sponsor {
+  font-family: 'Martel', serif;
+  font-size: 32px;
+  margin-top: -427%;
+  margin-left: 28px;
+  padding: 50px 5px 5px 5px;
+}
+
+
+
+}*/
